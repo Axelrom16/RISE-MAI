@@ -1,0 +1,20 @@
+,Rules,Test coverage,Test accuracy,Test recall
+17,(VisualDeficiency = 1) // AND (Astigmatism = 1) // AND (TearProduction = 0) // THEN (RecommendedLense = 0),0.05263157894736842,1.0,1.0
+5,(Age = 2) // AND (Astigmatism = 1) // AND (TearProduction = 2) // THEN (RecommendedLense = 1),0.0,,0.0
+6,(VisualDeficiency = 0) // AND (Astigmatism = 0) // AND (TearProduction = 2) // THEN (RecommendedLense = 1),0.0,,0.0
+7,(Age = 0) // AND (VisualDeficiency = 0) // AND (Astigmatism = 1) // AND (TearProduction = 0) // THEN (RecommendedLense = 1),0.0,,0.0
+8,(Age = 2) // AND (Astigmatism = 1) // AND (TearProduction = 0) // THEN (RecommendedLense = 0),0.0,,0.0
+9,(VisualDeficiency = 0) // AND (Astigmatism = 0) // AND (TearProduction = 2) // THEN (RecommendedLense = 1),0.0,,0.0
+10,(Age = 1) // AND (VisualDeficiency = 0) // AND (Astigmatism = 1) // AND (TearProduction = 1) // THEN (RecommendedLense = 1),0.0,,0.0
+11,(Age = 1) // AND (VisualDeficiency = 1) // AND (Astigmatism = 0) // AND (TearProduction = 0) // THEN (RecommendedLense = 1),0.0,,0.0
+12,(VisualDeficiency = 0) // AND (Astigmatism = 0) // AND (TearProduction = 2) // THEN (RecommendedLense = 1),0.0,,0.0
+13,(Age = 1) // AND (VisualDeficiency = 0) // AND (Astigmatism = 1) // AND (TearProduction = 0) // THEN (RecommendedLense = 1),0.0,,0.0
+14,(Age = 2) // AND (Astigmatism = 1) // AND (TearProduction = 0) // THEN (RecommendedLense = 0),0.0,,0.0
+15,(Age = 0) // AND (Astigmatism = 1) // AND (TearProduction = 2) // THEN (RecommendedLense = 1),0.0,,0.0
+16,(VisualDeficiency = 0) // AND (Astigmatism = 1) // THEN (RecommendedLense = 1),0.0,,0.0
+18,(Age = 2) // AND (Astigmatism = 1) // AND (TearProduction = 2) // THEN (RecommendedLense = 1),0.0,,0.0
+0,(Age = 0) // AND (Astigmatism = 0) // AND (TearProduction = 0) // THEN (RecommendedLense = 2),0.0,,
+1,(VisualDeficiency = 0) // AND (Astigmatism = 0) // AND (TearProduction = 0) // THEN (RecommendedLense = 2),0.0,,
+2,(Age = 2) // AND (Astigmatism = 0) // AND (TearProduction = 0) // THEN (RecommendedLense = 2),0.0,,
+3,(VisualDeficiency = 0) // AND (Astigmatism = 0) // AND (TearProduction = 0) // THEN (RecommendedLense = 2),0.0,,
+4,(Age = 2) // AND (Astigmatism = 0) // AND (TearProduction = 0) // THEN (RecommendedLense = 2),0.0,,

@@ -1,0 +1,28 @@
+#-------
+Data
+#-------
+Train data shape: (19, 5)
+Test data shape: (5, 5)
+
+#-------
+Training
+#-------
+Initial accuracy: 0.8947368421052632
+Epoch: 0
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+Improved accuracy: 0.8947368421052632
+
+Training time: 0:00:00.466567
