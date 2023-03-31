@@ -36,7 +36,7 @@ class RISE:
         Import the data set using the dataset_name parameter, process the data and perform the train/test split
         :return:
         """
-        data = pd.read_csv('./data/' + self.name + '.csv', na_values=['?'])
+        data = pd.read_csv('../data/' + self.name + '.csv', na_values=['?'])
 
         # Missing data
         if data.isnull().values.any():
@@ -50,7 +50,6 @@ class RISE:
         le = LabelEncoder()
         for cat in self.cat_variables:
             data[cat] = le.fit_transform(data[cat])
-            print(dict(zip(le.classes_, range(len(le.classes_)))))
 
         # Values type
         for cat in self.cat_variables:
@@ -234,7 +233,6 @@ class RISE:
         :param e: instance
         :return: predicted label for the instance
         """
-        #rs = [x for x in rs if 'None' not in x]
         distances = np.apply_along_axis(self.distance, axis=1, arr=rs, e=e)
         nearest_rule_index = np.argmin(distances)
         nearest_rule = rs[nearest_rule_index]
@@ -335,7 +333,7 @@ class RISE:
         :return: final set of rules
         """
         # Open fit log
-        results_file = open("results/train_" + self.name + ".txt", "w")
+        results_file = open("../results/train_" + self.name + ".txt", "w")
         self.out_file = results_file
 
         # Import data
@@ -517,7 +515,7 @@ class RISE:
         vec_rec = [self.rule_recall(r)[0] for r in rs]
         vec_rec_test = [self.rule_recall(r)[1] for r in rs]
 
-        file1 = open("results/evaluation_" + self.name + ".txt", "w")
+        file1 = open("../results/evaluation_" + self.name + ".txt", "w")
         # Write metrics
         file1.write("#-------\n")
         file1.write("Metrics\n")
@@ -545,11 +543,11 @@ class RISE:
         dict_df = {'Rules': rules_txt, 'Train coverage': vec_cov, 'Train accuracy': vec_acc, 'Train recall': vec_rec}
         df = pd.DataFrame(data=dict_df)
         df.sort_values(by=['Train recall', 'Train coverage', 'Train accuracy'], inplace=True, ascending=False)
-        df.to_csv("results/rules_" + self.name + ".csv")
+        df.to_csv("../results/rules_" + self.name + ".csv")
 
         dict_df = {'Rules': rules_txt, 'Test coverage': vec_cov_test, 'Test accuracy': vec_acc_test, 'Test recall': vec_rec_test}
         df = pd.DataFrame(data=dict_df)
         df.sort_values(by=['Test recall', 'Test coverage', 'Test accuracy'], inplace=True, ascending=False)
-        df.to_csv("results/rules_" + self.name + "_test.csv")
+        df.to_csv("../results/rules_" + self.name + "_test.csv")
 
 
