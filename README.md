@@ -34,7 +34,7 @@ PW1 SEL - RISE
 └── readme.md
 ``` 
 
-Use the `main.py` file or the followingo code: 
+Use the `main.py` file or the following code: 
 ```python
 from RISE import * 
 
