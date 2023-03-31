@@ -175,9 +175,7 @@ class RISE:
         """
         lower, upper = map(float, r.split('-'))
 
-        #e_max = self.X[self.attr_names[i]].max()
         e_max = self.num_max[i]
-        #e_min = self.X[self.attr_names[i]].min()
         e_min = self.num_min[i]
         value = 0
         if lower <= e <= upper:
