@@ -1,4 +1,4 @@
-# RULE - SEL 
+# RISE - SEL 
 
 The RISE algorithm is a type of rule-based classifier first implemented by Pedro Domingos where the rules are learned by gradually generalizing instances until there is no improvement in accuracy. We implemented the algorithm in Python 3 and we evaluate it in some data sets. 
 
